@@ -1,6 +1,6 @@
 from userbot import topfunc
 from userbot.thunderconfig import Config
-from userbot.utils import lightning_cmd
+from userbot.utils import sycrox_cmd
 from var import Var
 
 idgen = topfunc.id_generator
@@ -62,10 +62,10 @@ if Config.PRIVATE_GROUP_BOT_API_ID is None:
 else:
     BOTLOG = True
     BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
-if Var.LIGHTNING_PRO.lower() == "NO":
-    light_pr = "NO"
+if Var.SYCROX_PRO.lower() == "NO":
+    syco_pr = "NO"
 else:
-    lightning_pr = "YES"
+    sycrox_pr = "YES"
 
 lightning_status = (
     f"Sorry Sir In Some Plugin There Is A Telegram Bug\n"
