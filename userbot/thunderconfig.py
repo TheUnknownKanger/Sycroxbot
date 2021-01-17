@@ -26,20 +26,20 @@ class Config(object):
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     # Here for later purposes
     BOT_HANDLER = os.environ.get("BOT_HANDLER", "^/")
-    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1434332284").split())
+    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1037581197").split())
     WHITELIST_USERS = set(
-        int(x) for x in os.environ.get("WHITELIST_USERS", "1311769691").split()
+        int(x) for x in os.environ.get("WHITELIST_USERS", "1037581197").split()
     )
     BLACKLIST_USERS = set(
         int(x) for x in os.environ.get("BLACKLIST_USERS", "1434332284").split()
     )
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1311769691").split())
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1318528746").split())
     SUPPORT_USERS = set(
-        int(x) for x in os.environ.get("SUPPORT_USERS", "909978158").split()
+        int(x) for x in os.environ.get("SUPPORT_USERS", "1318528746").split()
     )
-    BEST_USERS = set(int(x) for x in os.environ.get("BEST_USERS", "1421068194").split())
+    BEST_USERS = set(int(x) for x in os.environ.get("BEST_USERS", "1318528746").split())
     DEVLOPERS = set(
-        int(x) for x in os.environ.get("DEVLOPERS_USERS", "1311769691").split()
+        int(x) for x in os.environ.get("DEVLOPERS_USERS", "1318528746").split()
     )
     # custom vars
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
@@ -85,7 +85,7 @@ class Config(object):
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
+        "UPSTREAM_REPO", "https://github.com/TheUnknownKanger/Sycroxbot"
     )
     ALIVE_PIC = os.environ.get(
         "ALIVE_IMAGE", "https://telegra.ph/file/63abc60224dc567e3d441.jpg"
