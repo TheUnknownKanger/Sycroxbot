@@ -10,7 +10,7 @@ MASTER = str(ALIVE_NAME) if ALIVE_NAME else "The Unknown"
 
 The Unknown = "[Unknown](https://t.me/harshharshhuma)"
 OP = "[Sycrox UserBot](https://github.com/TheUnknownKanger/Sycroxbot)"
-OKAY = "[SUPPORT GROUP](https://t.me/LIGHTINGSUPPORT)"
+OKAY = "[SUPPORT GROUP](https://t.me/ANONYMOUS_HACX)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
 ALIVE = "SYCROX USERBOT IS ON 🔥 FIRE 🔥" #make by THE UNKNOWN KANGER for Sycrox UserBot
