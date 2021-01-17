@@ -18,9 +18,9 @@ class Var(object):
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     # Here for later purposes
-    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1311769691").split())
+    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1318528746").split())
     WHITELIST_USERS = set(
-        int(x) for x in os.environ.get("WHITELIST_USERS", "1311769691").split()
+        int(x) for x in os.environ.get("WHITELIST_USERS", "1318528746").split()
     )
     MAX_ANTI_FLOOD_MESSAGES = 10
     # warn mode for anti flood
@@ -28,8 +28,8 @@ class Var(object):
         until_date=None, view_messages=None, send_messages=True
     )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
-    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1311769691").split())
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1311769691").split())
+    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1318528746").split())
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1318528746").split())
     SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
     # custom vars
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
@@ -74,7 +74,7 @@ class Var(object):
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
+        "UPSTREAM_REPO", "https://github.com/TheUnknownKanger/Sycroxbot"
     )
     ALIVE_PIC = os.environ.get(
         "ALIVE_IMAGE", "https://telegra.ph/file/63abc60224dc567e3d441.jpg"
