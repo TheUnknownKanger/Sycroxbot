@@ -83,7 +83,7 @@ def command(**args):
 
         return decorator
 
-def lightning_command(**args):
+def sycrox_command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
@@ -222,7 +222,7 @@ def remove_plugin(shortname):
         raise ValueError
 
 
-def lightning_cmd(pattern=None, command=None, **args):
+def sycrox_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -423,7 +423,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/lightningsupport)"
+            link = "[Here](https://t.me/deviluserbot)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -434,7 +434,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN Lightning USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN Syxrox USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -793,7 +793,7 @@ def start_assistant(shortname):
         sys.modules[
             "userbot.plugins.assistant" + "Initialising Lightning" + shortname
         ] = mod
-        sedprint.info("Lightning Has imported " + shortname)
+        sedprint.info("Sycrox Has imported " + shortname)
 
 
 def load_assistant(shortname):
@@ -810,7 +810,7 @@ def load_assistant(shortname):
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Initialising Lightning.")
-        print("Lightning - Imported " + shortname)
+        print("Sycrox - Imported " + shortname)
     else:
         import importlib
         import sys
@@ -823,4 +823,4 @@ def load_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant." + shortname] = mod
-        print("Lightning Has imported " + shortname)
+        print("Sycrox Has imported " + shortname)
