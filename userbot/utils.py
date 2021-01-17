@@ -189,7 +189,7 @@ def load_module(shortname):
         mod.borg = bot
         mod.userbot = bot
         # auto-load
-        mod.lightning_cmd = lightning_cmd
+        mod.sycrox_cmd = sycrox_cmd
         mod.sudo_cmd = sudo_cmd
         mod.edit_or_reply = edit_or_reply
         mod.eor = eor
@@ -791,7 +791,7 @@ def start_assistant(shortname):
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
         sys.modules[
-            "userbot.plugins.assistant" + "Initialising Lightning" + shortname
+            "userbot.plugins.assistant" + "Initialising Sycrox" + shortname
         ] = mod
         sedprint.info("Sycrox Has imported " + shortname)
 
@@ -809,7 +809,7 @@ def load_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising Lightning.")
+        print("Initialising Sycrox.")
         print("Sycrox - Imported " + shortname)
     else:
         import importlib
