@@ -1,4 +1,4 @@
-name: KeinShin
+name: Sycrox
 
 on: push
 
@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "lightning_cmd"
+          find: "sycrox_cmd"
 
-          replace: "lightning_cmd"
+          replace: "sycrox_cmd"
 
       - name: Create Pull Request
 
@@ -34,6 +34,6 @@ jobs:
 
           repository: .
 
-          commit_user_name: KeinShin
+          commit_user_name: Sycrox
 
           commit_user_email: poxsisofficial@gmail.com
