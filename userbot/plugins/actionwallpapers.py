@@ -7,7 +7,7 @@ import urllib
 import requests
 from telethon.tl import functions
 
-from userbot.utils import lightning_cmd
+from userbot.utils import sycrox_cmd
 
 COLLECTION_STRINGZ = [
     "Vietnam-War-Wallpapers",
@@ -47,7 +47,7 @@ async def animepp():
     urllib.request.urlretrieve(fy, "donottouch.jpg")
 
 
-@borg.on(lightning_cmd(pattern="fire ?(.*)"))
+@borg.on(sycrox_cmd(pattern="fire ?(.*)"))
 async def main(event):
 
     await event.edit(
