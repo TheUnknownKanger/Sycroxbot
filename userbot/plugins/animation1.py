@@ -1,12 +1,12 @@
 import asyncio
 
 from userbot import ALIVE_NAME
-from userbot.utils import lightning_cmd
+from userbot.utils import sycrox_cmd
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Cat"
 
 
-@borg.on(lightning_cmd(pattern="stupid$"))
+@borg.on(sycrox_cmd(pattern="stupid$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -35,7 +35,7 @@ async def _(event):
         await event.edit(animation_chars[i % 14])
 
 
-@borg.on(lightning_cmd(pattern=f"bombs$", outgoing=True))
+@borg.on(sycrox_cmd(pattern=f"bombs$", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -61,7 +61,7 @@ async def _(event):
     await asyncio.sleep(2)
 
 
-@borg.on(lightning_cmd(pattern=r"call$"))
+@borg.on(sycrox_cmd(pattern=r"call$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -93,7 +93,7 @@ async def _(event):
         await event.edit(animation_chars[i % 18])
 
 
-@borg.on(lightning_cmd(pattern="wtf$"))
+@borg.on(sycrox_cmd(pattern="wtf$"))
 async def _(event):
     if event.fwd_from:
         return
@@ -113,7 +113,7 @@ async def _(event):
         await event.edit(animation_chars[i % 5])
 
 
-@borg.on(lightning_cmd(pattern="ding$"))
+@borg.on(sycrox_cmd(pattern="ding$"))
 async def _(event):
     animation_interval = 0.3
     animation_ttl = range(0, 30)
@@ -127,7 +127,7 @@ async def _(event):
         "⬜⬜⬛⬜⬜\n⬜⬜⬛⬜⬜\n⬜⬜🔴⬜⬜",
         "⬜⬜⬛⬜⬜\n⬜⬛⬜⬜⬜\n🔴⬜⬜⬜⬜",
         "🔴⬛⬛⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-        "⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜\n⬜  [Lightning IS BEST](https://github.com/KeinShin/Black-Lightning) ⬜\n⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜",
+        "⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜\n⬜  [Sycrox UserBot IS BEST](https://github.com/TheUnknownKanger/Sycroxbot) ⬜\n⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜",
     ]
     if event.fwd_from:
         return
@@ -138,7 +138,7 @@ async def _(event):
         await event.edit(animation_chars[i % 10])
 
 
-@borg.on(lightning_cmd(pattern=f"hypno$", outgoing=True))
+@borg.on(sycrox_cmd(pattern=f"hypno$", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -167,7 +167,7 @@ async def _(event):
         await event.edit(animation_chars[i % 15])
 
 
-@borg.on(lightning_cmd(pattern="gangasta$"))
+@borg.on(sycrox_cmd(pattern="gangasta$"))
 async def _(event):
     await event.edit("EVERyBOdy")
     await asyncio.sleep(0.3)
@@ -186,7 +186,7 @@ async def _(event):
     await event.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥🔥🔥")
 
 
-@borg.on(lightning_cmd(pattern=f"charging$"))
+@borg.on(sycrox_cmd(pattern=f"charging$"))
 async def timer_blankx(e):
     txt = (
         e.text[10:]
