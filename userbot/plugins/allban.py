@@ -7,10 +7,10 @@ from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
 from userbot import bot
-from userbot.utils import lightning_cmd
+from userbot.utils import sycrox_cmd
 
 
-@bot.on(lightning_cmd(pattern=r"allban", outgoing=True))
+@bot.on(sycrox_cmd(pattern=r"allban", outgoing=True))
 async def testing(event):
     nikal = await event.get_chat()
     chutiya = await event.client.get_me()
